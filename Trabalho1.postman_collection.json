@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "712412da-f4b2-42f0-aa19-bb9f61984a7b",
+		"name": "Trabalho1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/routes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"routes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Route",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 10000,\n    \"name\": \"Route Test\",\n    \"datePlan\": 1607525341441,\n    \"equipment\": {\n        \"id\": 10000,\n        \"name\": \"Test Equipment\"\n    },\n    \"equipmentMobile\": {\n        \"id\": 10000,\n        \"name\": \"Test Equipment\",\n        \"fazendoType\": \"DIRIGINDO\"\n    },\n    \"stops\": [{\n        \"id\": 1,\n        \"address\": \"Rua Capitão Gustavo, 3372\",\n        \"latitude\": -3.7510115,\n        \"longitude\": -38.5160609\n    },{\n        \"id\": 2,\n        \"address\": \"Rua Professor Carvalho, 2901\",\n        \"latitude\": -3.7510115,\n        \"longitude\": -38.5160609\n    },{\n        \"id\": 3,\n        \"address\": \"Av. Pontes Vieira, 825\",\n        \"latitude\": -3.7526124,\n        \"longitude\": -38.5147398\n    },{\n        \"id\": 4,\n        \"address\": \"R. Fiscal Vieira, S/N\",\n        \"latitude\": -3.7510115,\n        \"longitude\": -38.5160609\n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/routes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"routes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
